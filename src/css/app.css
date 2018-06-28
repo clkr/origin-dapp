@@ -519,7 +519,9 @@ a:hover {
   position: absolute;
   content: '';
   height: 18px;
-  right: 190px;
+  /* shifted for release */
+  /*right: 190px;*/
+  right: 130px;
   top: 0;
   width: 36px;
   z-index: 999;
@@ -589,7 +591,9 @@ a:hover {
 }
 
 .connectivity .triangle {
-  margin-right: 190px;
+  /* shifted for release */
+  /*margin-right: 190px;*/
+  margin-right: 130px;
   width: 36px;
 
   -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
@@ -2997,11 +3001,15 @@ footer .dropdown-menu li:hover {
   }
 
   .navbar .connectivity .triangle {
-    margin-right: 205px;
+    /* shifted for release */
+    /*margin-right: 205px;*/
+    margin-right: 145px;
   }
 
   .connectivity .dropdown-menu::after {
-    right: 205px;
+    /* shifted for release */
+    /*right: 205px;*/
+    right: 145px;
   }
 
   .navbar .identity .triangle {
@@ -3078,7 +3086,9 @@ footer .dropdown-menu li:hover {
   }
 
   .navbar .connectivity .dropdown-menu {
-    right: calc(((100% - 720px) / 2) + 60px + 60px + 60px);
+    /* shifted for release */
+    /*right: calc(((100% - 720px) / 2) + 60px + 60px + 60px);*/
+    right: calc(((100% - 720px) / 2) + 60px + 60px);
     width: 520px;
   }
 
@@ -3193,7 +3203,9 @@ footer .dropdown-menu li:hover {
   }
 
   .navbar .connectivity .dropdown-menu {
-    right: calc(((100% - 960px) / 2) + 60px + 60px + 60px + 15px);
+    /* shifted for release */
+    /*right: calc(((100% - 960px) / 2) + 60px + 60px + 60px + 15px);*/
+    right: calc(((100% - 960px) / 2) + 60px + 60px + 15px);
   }
 
   .navbar .identity .dropdown-menu {
@@ -3234,7 +3246,9 @@ footer .dropdown-menu li:hover {
   .navbar .sell .dropdown-menu {
     position: absolute;
     left: auto;
-    right: calc(((100% - 960px) / 2) + 60px + 60px + 60px + 60px + 30px + 15px + 120px + 10px);
+    /* shifted for release */
+    /*right: calc(((100% - 960px) / 2) + 60px + 60px + 60px + 60px + 30px + 15px + 120px + 10px);*/
+    right: calc(((100% - 960px) / 2) + 60px + 60px + 60px + 30px + 15px + 120px + 10px);
   }
 
   .navbar .sell .dropdown-menu .actual-menu {
@@ -3324,7 +3338,9 @@ footer .dropdown-menu li:hover {
 /* xl + */
 @media (min-width: 1200px) {
   .navbar .connectivity .dropdown-menu {
-    right: calc(((100% - 1140px) / 2) + 60px + 60px + 60px + 15px);
+    /* shifted for release */
+    /*right: calc(((100% - 1140px) / 2) + 60px + 60px + 60px + 15px);*/
+    right: calc(((100% - 1140px) / 2) + 60px + 60px + 15px);
   }
 
   .navbar .identity .dropdown-menu {
@@ -3336,7 +3352,9 @@ footer .dropdown-menu li:hover {
   }
 
   .navbar .sell .dropdown-menu {
-    right: calc(((100% - 1140px) / 2) + 60px + 60px + 60px + 60px + 30px + 15px + 120px + 10px);
+    /* shifted for release */
+    /*right: calc(((100% - 1140px) / 2) + 60px + 60px + 60px + 60px + 30px + 15px + 120px + 10px);*/
+    right: calc(((100% - 1140px) / 2) + 60px + 60px + 60px + 30px + 15px + 120px + 10px);
   }
 
   .navbar .transactions .dropdown-menu {

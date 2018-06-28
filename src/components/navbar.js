@@ -108,7 +108,8 @@ class NavBar extends Component {
           </div>
           <div className="static navbar-nav order-1 order-lg-2">
             <ConnectivityDropdown />
-            <TransactionsDropdown />
+            {/* Hide for release */}
+            {/* <TransactionsDropdown /> */}
             <NotificationsDropdown />
             <UserDropdown />
           </div>
