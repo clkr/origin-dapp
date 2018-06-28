@@ -69,25 +69,49 @@ class VerifierServices extends Component {
               </span>
             </button>
           </div>
+          {/* Hide for release */}
+          {/*
+            <div className="col-12 col-sm-6 col-md-4">
+              <button
+                data-modal="airbnb"
+                className={`service d-flex${
+                  published.airbnb
+                    ? ' published'
+                    : provisional.airbnb
+                      ? ' verified'
+                      : ''
+                }`}
+                onClick={handleToggle}
+              >
+                <span className="image-container d-flex align-items-center justify-content-center">
+                  <img src="images/airbnb-icon-light.svg" alt="Airbnb icon" />
+                </span>
+                <span className="service-name">
+                  <FormattedMessage
+                    id={ '_Services.airbnb' }
+                    defaultMessage={ 'Airbnb' }
+                  />
+                </span>
+              </button>
+            </div>
+          */}
           <div className="col-12 col-sm-6 col-md-4">
-            <button
-              data-modal="airbnb"
-              className={`service d-flex${
-                published.airbnb
-                  ? ' published'
-                  : provisional.airbnb
-                    ? ' verified'
-                    : ''
-              }`}
-              onClick={handleToggle}
-            >
+            <button className="service d-flex disabled" disabled>
               <span className="image-container d-flex align-items-center justify-content-center">
-                <img src="images/airbnb-icon-light.svg" alt="Airbnb icon" />
+                <img src="images/address-icon.svg" alt="address icon" />
+              </span>
+              <span className="unavailable-bg" />
+              <span className="unavailable-message">
+                <FormattedMessage
+                  id={ '_Services.comingSoon' }
+                  defaultMessage={ 'Coming {br} Soon' }
+                  values={{ br: <br /> }}
+                />
               </span>
               <span className="service-name">
                 <FormattedMessage
-                  id={ '_Services.airbnb' }
-                  defaultMessage={ 'Airbnb' }
+                  id={ '_Services.address' }
+                  defaultMessage={ 'Address' }
                 />
               </span>
             </button>
