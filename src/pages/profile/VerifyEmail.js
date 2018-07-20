@@ -97,7 +97,6 @@ class VerifyEmail extends Component {
   }
 
   clearErrors() {
-    // clear errors
     this.setState({formErrors: {}})
     this.setState({generalErrors:[]})
   }

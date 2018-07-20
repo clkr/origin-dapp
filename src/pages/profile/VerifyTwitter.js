@@ -8,7 +8,6 @@ class VerifyTwitter extends Component {
   constructor() {
     super()
     this.state = {
-      formErrors: {},
       generalErrors: []
     }
   }
@@ -62,7 +61,11 @@ class VerifyTwitter extends Component {
           <a
             href="#"
             data-modal="twitter"
-            onClick={this.props.handleToggle}
+            onClick={ event => {
+              event.preventDefault()
+              this.props.handleToggle(event)
+              this.clearErrors()
+            }}
           >
             <FormattedMessage
               id={ 'VerifyTwitter.cancel' }
@@ -72,6 +75,10 @@ class VerifyTwitter extends Component {
         </div>
       </Modal>
     )
+  }
+
+  clearErrors() {
+    this.setState({generalErrors:[]})
   }
 
   async catchPossibleErrors(callback, event) {
@@ -89,6 +96,7 @@ class VerifyTwitter extends Component {
   }
 
   onCertify() {
+    this.clearErrors()
     var twitterWindow = window.open(this.state.url, '', 'width=650,height=500')
 
     const finish = async event => {
